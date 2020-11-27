@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EvaluareUnit2</title>
+<style>
+h1 {
+  color: red;
+  text-align: left;
+  p.solid {border-style: solid;}
+  
+}
+
+#nume {
+	border: thick solid black;
+	background-color: tan;
+	}
+#aici {
+	color: yellow;
+	text-align: right;
+	}
+
+h2 {
+	color: tan;
+	text-align: right;
+	text-decoration: underline;
+	}
+h3 {	
+	color: tan;
+	text-align: center;
+	text-decoration: underline;
+	}
+
+h4 { color: tan;
+	text-align: left;
+	text-decoration: underline;
+	}
+	#chenarul2 {
+  border: thick solid brown;
+  background-color: LightGray;
+}
+h5 { color: tan;
+	text-align: left;
+	text-decoration: underline;
+	}
+
+	
+
+p {
+  font-family: verdana;
+  font-size: 18px;
+  
+}
+table {
+  border-collapse: collapse;
+  margin-right: auto;
+  border: 3px solid red;
+ 
+} 
+
+th,td {
+  border: 1px solid red;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 30px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #46649B;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 id="nume">Martin Dana-Andreea</h1>
+<p id="aici">E-mail:dana.andrea15@yahoo.com</p>
+<p id="aici">tel:004007424321**</p>
+
+<h2>Specificatii tehnice ale statiei principale de lucru</h2>
+
+<table id="tabel">
+  <tr>
+    <th>Denumire</th>
+    <th>Producator</th>
+    <th>Parametri</th>
+  </tr>
+  <tr>
+    <td>Placa video </td>
+    <td>NVIDIA</td>
+    <td>4Gb 768gpu</td>
+  </tr>
+  <tr>
+    <td>Procesor Intel i5 7300Hq </td>
+    <td>Intel</td>
+    <td>2.6 GHz</td>
+  </tr>
+  <tr>
+    <td>Sloruri</td>
+    <td>-</td>
+    <td>USB3.0,Eternet,HDMI2.0,Jack3.5</td>
+  </tr>
+
+</table></div>
+
+<div id="chenarul2">
+<h3>Structura retelei personale si accesul la internet</h3>
+<img src="diagrama.retea.jpg" alt="Imagine diagrama retea">
+<h4>Caracteristicile conexiunii la retea</h4>
+<p>I.Adresa MAC:54E1AE1D2A</p>
+<p>II.Adresa IP:IpV4:190.168.0.102</p>
+<p>III.Debit la download:94bps</p>
+<p>IV.Debit la upload:70bps</p>
+</div>
+<h5>Utilizarea resurselor(slideshow)</h5>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+  <div class="text">CPU</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.jpg" style="width:100%">
+  <div class="text">Memory</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+  <div class="text">Network</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("chenarul2").style.border = "thin dotted red";
+   document.getElementById("nume").style.border = "thin dotted red";
+   document.getElementById("aici").style.Color = "yellow";
+    
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
